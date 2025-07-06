@@ -23,4 +23,3 @@ docker run --rm -v "$(pwd):/app" whisper-transcriber python transcribe_local.py 
 ```sh
 docker run --rm -v "$(pwd):/app" whisper-transcriber python transcribe_local.py /app/audio.wav small
 ```
-# VoiceToText
