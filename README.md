@@ -15,11 +15,11 @@ docker build -t whisper-transcriber .
 音声ファイルをコンテナにマウントして実行します。
 
 ```sh
-docker run --rm -v "$(pwd):/app" whisper-transcriber python transcribe_local.py /app/audio.wav
+docker run --rm -v "$(pwd):/app" whisper-transcriber sample.wav
 ```
 
 モデル名を指定する場合は、コマンドの末尾に追加してください（例: `small`）。
 
 ```sh
-docker run --rm -v "$(pwd):/app" whisper-transcriber python transcribe_local.py /app/audio.wav small
+docker run --rm -v "$(pwd)":/app whisper-transcriber sample.wav small
 ```
